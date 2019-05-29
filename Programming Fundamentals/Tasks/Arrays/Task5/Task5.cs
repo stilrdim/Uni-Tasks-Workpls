@@ -22,10 +22,8 @@ namespace Arrays
             // Go over each element from the input
             for (int i = 0; i < inputToArray.Length; i++)
             {
-                int numberToInt32 = 0;
-
                 // Convert the elements from String to Int32
-                numberToInt32 = int.Parse(inputToArray[i]);
+                int numberToInt32 = int.Parse(inputToArray[i]);
 
                 // If the current number is even, add it to the evenNumbers array
                 if (numberToInt32 % 2 == 0)
