@@ -13,15 +13,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task2", "Programming Fundam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task3", "Programming Fundamentals\Tasks\Arrays\Task3\Task3.csproj", "{11B7E429-93CD-46D6-A426-5DDB2F92C60A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4", "Programming Fundamentals\Tasks\Arrays\Task4\Task4.csproj", "{5D79396E-EA43-4525-84F9-BC0FAC66074B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task4", "Programming Fundamentals\Tasks\Arrays\Task4\Task4.csproj", "{5D79396E-EA43-4525-84F9-BC0FAC66074B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5", "Programming Fundamentals\Tasks\Arrays\Task5\Task5.csproj", "{34593C6C-9EBF-4289-B182-46F4C8FB69D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task5", "Programming Fundamentals\Tasks\Arrays\Task5\Task5.csproj", "{34593C6C-9EBF-4289-B182-46F4C8FB69D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6", "Programming Fundamentals\Tasks\Arrays\Task6\Task6.csproj", "{D165BE71-4328-4D5C-A23E-33246A4FBA83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task6", "Programming Fundamentals\Tasks\Arrays\Task6\Task6.csproj", "{D165BE71-4328-4D5C-A23E-33246A4FBA83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task7", "Programming Fundamentals\Tasks\Arrays\Task7\Task7.csproj", "{5547A24B-FFE6-481F-843B-D1071BA168D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task7", "Programming Fundamentals\Tasks\Arrays\Task7\Task7.csproj", "{5547A24B-FFE6-481F-843B-D1071BA168D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task8", "Programming Fundamentals\Tasks\Arrays\Task8\Task8.csproj", "{270CEF25-7AF1-4373-9325-87ED353E125F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task8", "Programming Fundamentals\Tasks\Arrays\Task8\Task8.csproj", "{270CEF25-7AF1-4373-9325-87ED353E125F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataTypes - More", "DataTypes - More", "{185021E6-503A-4C0A-99CB-704B21DFB9D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DT Task2", "Programming Fundamentals\Tasks\DT-M\DT Task2\DT Task2.csproj", "{A2BEE010-6F1D-49A6-88EC-9436AC33C625}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,10 @@ Global
 		{270CEF25-7AF1-4373-9325-87ED353E125F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{270CEF25-7AF1-4373-9325-87ED353E125F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{270CEF25-7AF1-4373-9325-87ED353E125F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2BEE010-6F1D-49A6-88EC-9436AC33C625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BEE010-6F1D-49A6-88EC-9436AC33C625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BEE010-6F1D-49A6-88EC-9436AC33C625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BEE010-6F1D-49A6-88EC-9436AC33C625}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +86,7 @@ Global
 		{D165BE71-4328-4D5C-A23E-33246A4FBA83} = {B9E0B7F0-E769-4AB3-863E-8CC9AD845C92}
 		{5547A24B-FFE6-481F-843B-D1071BA168D6} = {B9E0B7F0-E769-4AB3-863E-8CC9AD845C92}
 		{270CEF25-7AF1-4373-9325-87ED353E125F} = {B9E0B7F0-E769-4AB3-863E-8CC9AD845C92}
+		{A2BEE010-6F1D-49A6-88EC-9436AC33C625} = {185021E6-503A-4C0A-99CB-704B21DFB9D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA5D82E0-B67C-4718-BCD8-E57D729E6254}
