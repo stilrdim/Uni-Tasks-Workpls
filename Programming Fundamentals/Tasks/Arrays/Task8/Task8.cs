@@ -34,6 +34,8 @@ namespace Arrays
 
             // As an end result, our first element now has the total 'condensed' value
             Console.WriteLine(inputToInt32Array[0]);
+
+            // TODO: finish :)? Currently only works 50% of the time
         }
     }
 }
