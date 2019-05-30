@@ -18,7 +18,7 @@ namespace DataTypes
             string[] currentInput = new string[arraySize];
 
 
-            // Ask for input until the desired amount of numbers is reached
+            // Ask for input until the desired amount of pairs is reached
             for (int i = 0; i < arraySize; i++)
             {
                 // Prompt for the two numbers
@@ -43,6 +43,12 @@ namespace DataTypes
                         // Get each digit by converting the number to string and looping over it (current loop)
                         string leftNumberString = numbersArray[0].ToString();
 
+                        // If the starting char is a "-", replace it with a 0
+                        if (leftNumberString[j].ToString() == "-")
+                        {
+                            leftNumberString = "0";
+                        }
+
                         // Add the current number to the Int32 array after converting it to string to avoid getting the ASCII values
                         leftSideDigits[j] = Convert.ToInt32(leftNumberString[j].ToString());
 
@@ -56,6 +62,11 @@ namespace DataTypes
                     for (int j = 0; j < numbersArray[1].ToString().Length; j++)
                     {
                         string rightNumberString = numbersArray[1].ToString();
+                        if (rightNumberString[j].ToString() == "-")
+                        {
+                            rightNumberString = "0";
+                        }
+
                         rightSideDigits[j] = Convert.ToInt32(rightNumberString[j].ToString());
                         rightSideSum += rightSideDigits[j];
                     }
@@ -65,4 +76,3 @@ namespace DataTypes
         }
     }
 }
-// TODO: Fix index out of range at line 28
