@@ -13,26 +13,50 @@ namespace ArraysMore
 
             // An array to store the length of the current longest sequence
             int[] len = new int[sequence.Length];
+
+            // An array to store the previous position
             int[] prev = new int[sequence.Length];
 
+            // Get the highest index
             int highestIndex = LEN(sequence, len, prev);
 
-            PrintLIS(sequence, prev, highestIndex);
+            Console.WriteLine(LIS(sequence, prev, highestIndex));
         }
 
-        static void PrintLIS(int[] sequence, int[] prev, int index)
+
+        /// <summary>
+        /// Returns the Longest Increasing Subsequence
+        /// </summary>
+        /// <param name="sequence"></param>
+        /// <param name="prev"></param>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        static string LIS(int[] sequence, int[] prev, int index)
         {
+            // Using list since making an array returns zeroes and gets detected as incorrect answer
             List<int> lis = new List<int>();
 
+            // First and last elements are -1, loop over everything between them
             while (index != -1)
             { 
                 lis.Add(sequence[index]);
                 index = prev[index];
             }
+
+            // Return the result reversed and formatted to string joined by spaces
             lis.Reverse();
-            Console.WriteLine($"subsequence = [{string.Join(", ", lis)}]");
+            return string.Join(" ", lis);
         }
-        private static int LEN(int[] sequence, int[] length, int[] prev)
+
+
+        /// <summary>
+        /// Returns the highest index in a given sequence
+        /// </summary>
+        /// <param name="sequence"></param>
+        /// <param name="sequenceLength"></param>
+        /// <param name="prev"></param>
+        /// <returns></returns>
+        private static int LEN(int[] sequence, int[] sequenceLength, int[] prev)
         {
             // Store the current max index
             int maxIndex = 0;
@@ -41,26 +65,29 @@ namespace ArraysMore
             for (int i = 0; i < sequence.Length; i++)
             {
                 // Set value of all indexes to 1
-                length[i] = 1;
+                sequenceLength[i] = 1;
                 prev[i] = -1;
 
-                // Find the highest current sequence length
+                // Find the current highest sequence length and update the prev index' value
                 for (int j = 0; j < i; j++)
                 {
-                    if (sequence[i] > sequence[j] && length[i] < length[j] + 1)
+                    if (sequence[i] > sequence[j] && sequenceLength[i] < sequenceLength[j] + 1)
                     {
-                        length[i] = length[j] + 1;
+                        sequenceLength[i] = sequenceLength[j] + 1;
                         prev[i] = j;
                     }
                 }
 
-                if (length[i] > maxLength)
+                /* If the current length is higher than the previous max length, set it as the new max length
+                   and set the highest index to the current one */
+                if (sequenceLength[i] > maxLength)
                 {
-                    maxLength = length[i];
+                    maxLength = sequenceLength[i];
                     maxIndex = i;
                 }
             }
 
+            // Return the max index
             return maxIndex;
         }
     }
