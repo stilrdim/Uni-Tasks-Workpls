@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ArraysMore
 {
-    class _Task5
+    class Task3_5
     {
         static void Main(string[] args)
         {
