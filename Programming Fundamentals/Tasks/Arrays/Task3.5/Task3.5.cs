@@ -33,7 +33,7 @@ namespace ArraysMore
         /// <returns></returns>
         static string LIS(int[] sequence, int[] prev, int index)
         {
-            // Using list since making an array returns zeroes and gets detected as incorrect answer
+            // Using list since making an array returns zeroes and doesn't get recognised as a correct answer
             List<int> lis = new List<int>();
 
             // First and last elements are -1, loop over everything between them
